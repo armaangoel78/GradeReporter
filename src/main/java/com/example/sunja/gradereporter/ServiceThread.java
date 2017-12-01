@@ -75,7 +75,7 @@ public class ServiceThread implements Runnable{
         protected Boolean doInBackground(String... params) {
             try {
                 Connection.Response login = Jsoup.connect("https://myccs.ccs.k12.in.us/sessions")
-                        .data("username", "armaangoel", "password", "asdfjk")
+                        .data("username", "", "password", "")
                         .method(Connection.Method.POST)
                         .execute();
 
